@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a1f2f7d-6e8d-42dc-bd4e-09ac44bf6acc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom-css/education.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/custom-css/projects.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/education.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-css/blog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-css/contact.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-css/navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-script/navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-css/education.css" beforeDir="false" afterPath="$PROJECT_DIR$/custom-css/education.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom-css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/custom-css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom-css/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/custom-css/projects.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education.html" beforeDir="false" afterPath="$PROJECT_DIR$/education.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -60,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566729842575</updated>
-      <workItem from="1566729845810" duration="18853000" />
+      <workItem from="1566729845810" duration="24681000" />
     </task>
     <servers />
   </component>

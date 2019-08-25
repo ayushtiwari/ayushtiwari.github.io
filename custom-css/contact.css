@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Sans|Playfair+Display+SC&display=swap');
 
+body {
+    font-family: 'Josefin sans', sans-serif;
+}
+
+
+.top-bound {
+    margin-top: 7%;
+}
 
 .intro {
     padding: 5% 0;
@@ -8,17 +16,22 @@
 .main-header #name {
     font-family: 'Playfair Display SC', serif;
 }
-.main-header {
-    padding-top: 7%;
+.contact {
     padding-bottom: 4%;
-    height: 85vh;
-    position: relative;
 }
 
+.address {
 
+    padding-bottom: 3%;
+}
+.email {
+    padding-top: 7%;
+    padding-bottom: 3%;
+}
 
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
 }
+

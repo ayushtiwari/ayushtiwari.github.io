@@ -1,0 +1,15 @@
+body {
+    font-family: 'Josefin sans', sans-serif;
+}
+
+.top-bound {
+    margin-top: 7%;
+}
+
+a {
+   color: #343a40;
+}
+
+a:hover {
+    color: darkgoldenrod!important;
+}

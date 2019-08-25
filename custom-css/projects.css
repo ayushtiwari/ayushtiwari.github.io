@@ -4,15 +4,7 @@ body {
     font-family: 'Josefin sans', sans-serif;
 }
 
-.navbar {
-    font-family: 'Great Vibes', cursive;;
-    /*border-bottom: 2px solid gray;*/
-    padding-top: 3%;
-    padding-bottom: 1%;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+
 
 .top-bound {
     margin-top: 7%;
@@ -24,27 +16,6 @@ body {
 /*.nav-item {*/
 /*    font-size: 1.1rem;*/
 /*}*/
-
-.navbar-nav a {
-    font-size: 1.5rem;
-}
-
-.navbar-nav li {
-    margin: 0px 20px;
-}
-
-.navbar-nav .underline {
-    height: 2px;
-    background-color: transparent;
-    width: 0%;
-    transition: width 0.2s, background-color 0.5s;
-    margin: 0 auto;
-}
-
-.navbar-nav li:hover .underline {
-    background-color: black;
-    width: 100%;
-}
 
 .intro {
     padding: 5% 0;
@@ -70,7 +41,7 @@ body {
 .project-item img:hover {
     transition: all 0.5s;
     cursor: pointer;
-    transform: scale(1.15, 1.15);
+    transform: scale(1.1, 1.1);
 }
 
 .right-arrow {

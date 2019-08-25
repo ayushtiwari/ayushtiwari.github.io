@@ -9,13 +9,6 @@ body {
 .top-bound {
     margin-top: 7%;
 }
-/*.navbar-brand {*/
-/*    font-size: 2rem;*/
-/*}*/
-
-/*.nav-item {*/
-/*    font-size: 1.1rem;*/
-/*}*/
 
 .intro {
     padding: 5% 0;
@@ -68,4 +61,17 @@ footer {
     bottom: 0;
     font-size: 2rem;
     width: 100%;
+}
+
+img {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .8s ease-in-out;
+}
+
+img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
 }

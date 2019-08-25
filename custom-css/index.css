@@ -3,6 +3,7 @@
 
 .intro {
     padding: 5% 0;
+    cursor: default;
 }
 
 .main-header #name {

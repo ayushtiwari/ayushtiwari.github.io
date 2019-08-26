@@ -6,14 +6,19 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="custom-css/main.css" type="text/css">
-    <link rel="stylesheet" href="custom-css/navbar.css" type="text/css">
-    <link rel="stylesheet" href="custom-css/index.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
 
     <title>Ayush - Home</title>
 </head>
 <body class="bg-light">
+
+<div id="overlay">
+    <h1 class="display-4"><span style="color: darkgoldenrod">W</span>elcome</h1>
+</div>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
@@ -42,6 +47,10 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                     <div class="underline"></div>
                 </li>
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="resume.html">Resume</a>-->
+<!--                    <div class="underline"></div>-->
+<!--                </li>-->
             </ul>
         </div>
     </div>
@@ -49,11 +58,16 @@
 
 <div class="top-bound"></div>
 
+<div class="square">
+
+</div>
+
 <section class="main-header">
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <h1 id="name" class="text-center display-4"><span style="color: darkgoldenrod">Ayush</span> Tiwari</h1>
+
             </div>
         </div>
         <div class="row intro">
@@ -64,6 +78,9 @@
                     Among my myriad of interests include Machine Learning and Creative Programming.
                     I am also extremely fond of Augmented Reality.
                 </p>
+                <div class="resume text-center">
+                    <a href="files/ayush_tiwari_resume.pdf" class="btn">Resume</a>
+                </div>
             </div>
         </div>
         <div class="row social">
@@ -103,7 +120,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<script src="custom-script/navbar.js"></script>
+<script src="script/navbar.js"></script>
+
+<script>
+
+    $(window).on("load", function () {
+
+        if (!sessionStorage.viewed){
+            setTimeout(function () {
+                $("#overlay").show();
+                sessionStorage.viewed = 1;
+            }, 1000);
+            $('#overlay').fadeOut(3000, "swing");
+        } else {
+            $('#overlay').hide();
+        }
+
+        console.log(sessionStorage);
+
+    });
+
+
+</script>
 
 </html>

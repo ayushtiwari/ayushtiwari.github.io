@@ -5,25 +5,35 @@ body {
 }
 
 .top-bound {
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
-.contact {
+.post-list {
+    padding-top: 7%;
     padding-bottom: 4%;
 }
 
-.address {
-
-    padding-bottom: 3%;
+.quote {
+    padding: 10%;
 }
-.email {
-    padding-top: 7%;
-    padding-bottom: 3%;
-}
-
 footer {
     position: absolute;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
 }
 
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

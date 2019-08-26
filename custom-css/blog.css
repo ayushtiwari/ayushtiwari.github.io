@@ -8,15 +8,17 @@ body {
     margin-top: 7%;
 }
 
-
-.intro {
-    padding: 5% 0;
-}
-
-.main-header #name {
-    font-family: 'Playfair Display SC', serif;
-}
 .post-list {
     padding-top: 7%;
     padding-bottom: 4%;
+}
+
+.quote {
+    padding: 10%;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }

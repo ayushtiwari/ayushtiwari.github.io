@@ -4,18 +4,10 @@ body {
     font-family: 'Josefin sans', sans-serif;
 }
 
-
 .top-bound {
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
-.intro {
-    padding: 5% 0;
-}
-
-.main-header #name {
-    font-family: 'Playfair Display SC', serif;
-}
 .contact {
     padding-bottom: 4%;
 }

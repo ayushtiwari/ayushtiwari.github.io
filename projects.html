@@ -10,20 +10,8 @@
     <link rel="stylesheet" href="custom-css/main.css" type="text/css">
     <link rel="stylesheet" href="custom-css/navbar.css" type="text/css">
     <link rel="stylesheet" href="custom-css/projects.css" type="text/css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <title>Ayush - Projects</title>
-
-    <style>
-        a {
-            color: #343a40;
-            transition: all 0.5s;
-        }
-        a:hover {
-            transition: all 0.5s;
-            color: darkgoldenrod;
-        }
-    </style>
 
 </head>
 <body class="bg-light">
@@ -79,12 +67,12 @@
                 </p>
             </div>
             <div class="col-md-8">
-                <img class="img-fluid" src="img/blog-admin.png" alt="">
+                <a href="https://github.com/ayushtiwari/Blogger"><img class="img-fluid" src="img/blog-admin.png" alt=""></a>
             </div>
     </div>
     <div class="row project-item p-5 border-bottom">
         <div class="col-md-8">
-            <img class="img-fluid" src="img/VGG19.png" alt="">
+            <a href="https://github.com/ayushtiwari/Cats-And-Dogs"><img class="img-fluid" src="img/VGG19.png" alt=""></a>
         </div>
         <div class="col-md-4">
             <h3 class=""><a class="" href="https://github.com/ayushtiwari/Cats-And-Dogs">VGG 19 in Action</a></h3>
@@ -103,7 +91,7 @@
 
     <div class="row project-item p-5 border-bottom">
         <div class="col-md-4">
-            <h3 class=""><a class="">ImageNet</a></h3>
+            <h3 class=""><a href="https://github.com/ayushtiwari/ImageNet">ImageNet</a></h3>
             <p>
                 This is a web application which runs the VGG19 and MobileNet models at client side using tensorflowjs.
                 Rather than transferring users data to server, it transfers the model to the browser.
@@ -116,13 +104,13 @@
             </p>
         </div>
         <div class="col-md-8">
-            <img class="img-fluid" src="img/imagenet.png" alt="">
+            <a href="https://github.com/ayushtiwari/ImageNet"><img class="img-fluid" src="img/imagenet.png" alt=""></a>
         </div>
     </div>
     <div class="row project-item p-5 border-bottom">
 
         <div class="col-md-8">
-            <img class="img-fluid" src="img/TCCS.png" alt="">
+            <a class="" href="https://github.com/ayushtiwari/EasyLogistics"><img class="img-fluid" src="img/TCCS.png" alt=""></a>
         </div>
         <div class="col-md-4">
             <h3 class=""><a class="" href="https://github.com/ayushtiwari/EasyLogistics">EasyLogistics</a></h3>
@@ -155,11 +143,7 @@
         </div>
 
         <div class="col-md-8">
-            <img class="img-fluid" src="img/search.png" alt="">
-            <div class="right-arrow text-center">
-                <i class="fas fa-arrow-circle-right" style="font-size: 50px;"></i>
-                <p>Go to Project</p>
-            </div>
+            <a class="" href="https://github.com/ayushtiwari/opensoft19"><img class="img-fluid" src="img/search.png" alt=""></a>
         </div>
     </div>
     <div class="row project-item p-5 border-bottom">
@@ -199,7 +183,7 @@
         </div>
 
         <div class="col-md-8">
-            <img class="img-fluid" src="img/portfolio.png" alt="">
+            <a href="https://github.com/ayushtiwari/portfolio"><img class="img-fluid" src="img/portfolio.png" alt=""></a>
         </div>
     </div>
 </div>
@@ -214,57 +198,16 @@
 </div>
 
 </body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="custom-script/navbar.js"></script>
+<script src="custom-script/projects.js"></script>
+
 <script>
-    $(window).on("load",function() {
 
-        // $(".project-item:first-of-type").css("margin-top", '17%');
-
-        $(".project-item").addClass("fade");
-        $(".project-item:nth-of-type(1)").removeClass("fade");
-        $(".project-item:nth-of-type(2)").removeClass("fade");
-
-        $(window).scroll(function() {
-            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-            $(".fade").each(function() {
-                /* Check the location of each desired element */
-                var objectBottom = $(this).offset().top + $(this).outerHeight();
-
-                /* If the element is completely within bounds of the window, fade it in */
-                if (objectBottom < windowBottom+50) { //object comes into view (scrolling down)
-                    if ($(this).css("opacity")==0) {$(this).fadeTo(500, 1);}
-                }
-                // else { //object goes out of view (scrolling up)
-                //     if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-                // }
-                if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                    $(".bottom").hide();
-                }
-            });
-        }).scroll(); //invoke scroll-handler on page-load
-    });
-    $(function() {
-
-        // fade in .navbar
-        $(function () {
-
-            // $(".project-item img").hover(function() {
-            //    $(".right-arrow").fadeToggle(500);;
-            // });
-
-            $(window).scroll(function () {
-
-                // set distance user needs to scroll before we start fadeIn
-                if ($(this).scrollTop() > 50) {
-                    $('.navbar').slideUp(400);
-                } else {
-                    $('.navbar').slideDown(400);
-                }
-            });
-        });
-
-    });
 </script>
+
 </html>

@@ -1,15 +1,14 @@
 body {
     font-family: 'Josefin sans', sans-serif;
 }
-
 .top-bound {
     margin-top: 7%;
 }
-
 a {
    color: #343a40;
+    transition: all 0.4s;
 }
-
 a:hover {
+    transition: all 0.4s;
     color: darkgoldenrod!important;
 }

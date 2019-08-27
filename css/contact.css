@@ -5,7 +5,7 @@ body {
 }
 
 .top-bound {
-    margin-top: 5%!important;
+    margin-top: 20%!important;
 }
 
 .contact {
@@ -32,11 +32,15 @@ footer {
 }
 
 @media (min-width: 768px) {
-
+    .top-bound {
+        margin-top: 10%!important;
+    }
 }
 
 @media (min-width: 992px) {
-
+    .top-bound {
+        margin-top: 7%!important;
+    }
 }
 
 @media (min-width: 1200px) {

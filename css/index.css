@@ -24,13 +24,19 @@ footer {
     width: 100%;
 }
 
-/*.square {*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    background-color: lightcoral;*/
-/*    position: absolute;*/
-/*    transform: rotate(45deg);*/
-/*}*/
+.ResumeBtn:hover {
+    cursor: pointer!important;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.modal-title {
+    font-family: 'Great Vibes', cursive;
+}
+
 
 #overlay {
     font-family: 'Great Vibes', cursive;

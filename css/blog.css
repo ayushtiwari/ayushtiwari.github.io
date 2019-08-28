@@ -16,10 +16,11 @@ body {
 .quote {
     padding: 10%;
 }
+
 footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*bottom: 0;*/
 }
 
 @media (min-width: 576px) {
@@ -32,6 +33,11 @@ footer {
 
 @media (min-width: 992px) {
 
+    footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
 }
 
 @media (min-width: 1200px) {

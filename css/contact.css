@@ -22,9 +22,9 @@ body {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
 }
 
 @media (min-width: 576px) {
@@ -40,6 +40,11 @@ footer {
 @media (min-width: 992px) {
     .top-bound {
         margin-top: 7%!important;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 }
 

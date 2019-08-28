@@ -91,14 +91,36 @@
                 <div class="resume text-center">
 <!--                    <a href="files/ayush_tiwari_resume.pdf" class="btn">Resume</a>-->
                     <!-- Button trigger modal -->
-                    <a type="" class="btn p-0 ResumeBtn" data-toggle="modal" data-target="#exampleModalCenter">Resume</a>
+                    <a type="" class="btn py-0 px-3 ResumeBtn" data-toggle="modal" data-target="#resumeModal">Resume</a>
+                    <a type="" class="btn py-0 px-3 ResumeBtn" data-toggle="modal" data-target="#transcriptModal">Transcript</a>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Transcript Modal -->
+                    <div class="modal fade" id="transcriptModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">Resume</h5>
+                                    <h5 class="modal-title">Transcript</h5>
+                                    <a type="" class="btn btn-sm close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </a>
+                                </div>
+                                <div class="modal-body">
+                                    <a type="" href="files/transcript.pdf" class="btn btn-sm ResumeBtn">View</a>
+                                    <a type="" id="downloadTranscript" href="files/transcript.pdf" class="btn btn-sm ResumeBtn" download>Download</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <a type="" class="btn btn-sm" data-dismiss="modal">Close</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Resume</h5>
                                     <a type="" class="btn btn-sm close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </a>
@@ -108,7 +130,7 @@
                                     <a type="" id="downloadResume" href="files/ayush_tiwari_resume.pdf" class="btn btn-sm ResumeBtn" download>Download</a>
                                 </div>
                                 <div class="modal-footer">
-                                    <a type="" class="btn btn-sm" data-dismiss="modal">Close</a>
+                                    <a type="" id="resumeClose" class="btn btn-sm" data-dismiss="modal">Close</a>
                                 </div>
                             </div>
                         </div>
@@ -140,14 +162,23 @@
     </div>
 </section>
 
+<!-- Place this tag where you want the button to render. -->
+
 <footer>
     <div class="container">
         <p class="text-center">
-            Powered by Elegance <a href="https://github.com/ayushtiwari/elegance"><i class="fab fa-sm fa-github-square"></i></a> | &copy; 2019 Ayush Tiwari
+            Powered by Elegance
+            <a href="https://github.com/ayushtiwari/elegance">
+                <i class="fab fa-sm fa-github-square">
+                </i>
+            </a>
+            | &copy; 2019 Ayush Tiwari
         </p>
     </div>
 </footer>
 
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -173,7 +204,9 @@
 
     });
 
-
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
 </script>
 
 </html>

@@ -19,6 +19,7 @@ body {
     font-size: 2rem;
     width: 100%;
 }
+
 img {
     box-shadow: 0px 0px 10px 5px dimgray;
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */

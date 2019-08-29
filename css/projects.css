@@ -9,9 +9,7 @@ body {
 .project-item {
     font-size: 0.8rem;
 }
-.fade {
-    opacity: 1;
-}
+
 .bottom {
     text-align: center;
     position: fixed;
@@ -49,7 +47,9 @@ img {
 }
 
 @media (min-width: 992px) {
-
+    .fade {
+        opacity: 1;
+    }
 }
 
 @media (min-width: 1200px) {

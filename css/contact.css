@@ -41,11 +41,6 @@ footer {
     .top-bound {
         margin-top: 7%!important;
     }
-    footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
 }
 
 @media (min-width: 1200px) {

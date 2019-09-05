@@ -1,5 +1,6 @@
 $(window).on("load",function() {
-
+    $(".bottom").fadeIn(1000);
+    // $(".bottom").slideUp(1000);
     $(".project-item").addClass("fade");
     $(".project-item:nth-of-type(1)").removeClass("fade");
     $(".project-item:nth-of-type(2)").removeClass("fade");
@@ -15,7 +16,7 @@ $(window).on("load",function() {
             }
 
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                $(".bottom").hide();
+                $(".bottom").fadeOut(1000);
             }
         });
     }).scroll();

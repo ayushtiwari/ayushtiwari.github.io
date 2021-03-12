@@ -148,10 +148,10 @@
         function age() {
             ageElement.textContent =  dhm(new Date() - new Date('1998-12-23T02:00:00+05:30'));
 
-            setInterval(age, 1000);
+            
         }
 
-        age();
+        setInterval(age, 1000);
 
         $('[data-toggle="tooltip"]').tooltip();
 

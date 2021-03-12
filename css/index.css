@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Josefin+Sans|Playfair+Display+SC&display=swap');
 
-.intro {
-    padding: 5% 0;
+.social {
+    padding: 2% 0;
     cursor: default;
 }
 body {
@@ -12,12 +12,10 @@ body {
 .main-header #name {
     font-family: 'Playfair Display SC', serif;
 }
-.main-header {
-    padding-top: 4%;
-    padding-bottom: 4%;
-    height: 70vh;
-}
 
+.name {
+    margin-top: 5%;
+}
 footer {
     /*position: absolute;*/
     /*bottom: 0;*/

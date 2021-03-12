@@ -26,6 +26,10 @@ footer {
     cursor: pointer!important;
 }
 
+#age, #clock {
+    cursor: default!important;
+}
+
 .btn:focus,.btn:active {
     outline: none !important;
     box-shadow: none;
@@ -35,6 +39,29 @@ footer {
     font-family: 'Great Vibes', cursive;
 }
 
+button {
+background: transparent;
+box-shadow: 0px 0px 0px transparent;
+border: 0px solid transparent;
+text-shadow: 0px 0px 0px transparent;
+color:white;
+}
+
+button:hover {
+background: transparent;
+box-shadow: 0px 0px 0px transparent;
+border: 0px solid transparent;
+text-shadow: 0px 0px 0px transparent;
+}
+
+button:active {
+outline: none;
+border: none;
+}
+
+button:focus {
+outline: 0;
+}
 
 #overlay {
     font-family: 'Great Vibes', cursive;

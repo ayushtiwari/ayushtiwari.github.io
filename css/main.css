@@ -5,12 +5,12 @@ body {
     margin-top: 30%!important;
 }
 a{
-   color: lightgray;
+   color: black;
     transition: all 0.4s;
 }
 a:hover {
     transition: all 0.4s;
-    color: white!important;
+    color: darkgoldenrod!important;
 }
 
 *.unselectable {

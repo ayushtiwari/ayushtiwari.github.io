@@ -4,10 +4,9 @@
     padding: 1% 0 2% 0;
     cursor: default;
 }
-body {
-}
+
 .main-header h1 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 .main-header #name {
     font-family: 'Playfair Display SC', serif;
@@ -15,11 +14,6 @@ body {
 
 .name {
     margin-top: 5%;
-}
-footer {
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*width: 100%;*/
 }
 
 .ResumeBtn:hover {

@@ -16,7 +16,7 @@
 
     <title>Ayush Tiwari</title>
 </head>
-<body class="" style="background-color:black; color: white;">
+<body class="" style="background-color:white; color: black;">
 
 <div class="top-bound"></div>
 
@@ -28,65 +28,11 @@
     <div class="container">
         <div class="row name">
             <div class="col-md-6 offset-md-3">
-                <h1 id="name" class="text-center display-4"><span style="color:lightgray">Ayush</span> <span style="color:lightgray">Tiwari</span></h1>
-                <!-- <p class="small text-center">17CS10056</p> -->
-                <p class="small text-center">C-402, Nehru Hall, IIT Kharagpur</p>
+                <h1 id="name" class="text-center display-4"><span style="color:darkgoldenrod">Ayush</span> <span style="color:black">Tiwari</span></h1>
+                <p class="text-center">CSE at IIT Kharagpur, 2017-21</p>
             </div>
         </div>
-        <div class="row social">
-            <div class="col-md-4 offset-md-4">
-                <div class="d-flex flex-row justify-content-around">
-                    <!-- <div>
-                        <a href="https://www.twitter.com" class=""><i class="fab fa-twitter fa-lg"></i></a>
-                    </div> -->
-                    <div>
-                        <a href="https://www.linkedin.com/in/theayushtiwari" class=""><i class="fab fa-linkedin fa-lg"></i></a>
-                    </div>
-                    <div>
-                        <a href="https://www.github.com/ayushtiwari" class=""><i class="fab fa-github fa-lg"></i></a>
-                    </div>
-                    <!-- <div>
-                        <a href="" class=""><i class="fab fa-discord fa-lg"></i></a>
-                    </div> -->
-                    <!-- <div>
-                        <a href="https://www.quora.com/profile/Ayush-Tiwari-267" class=""><i class="fab fa-quora fa-lg"></i></a>
-                    </div>
-                    <div>
-                        <a href="https://www.reddit.com/user/realayushtiwari" class=""><i class="fab fa-reddit fa-lg"></i></a>
-                    </div> -->
-                    
-                    <!-- <div>
-                        <a href="https://cse.iitkgp.ac.in/~ayushtiwari" class=""><i class="fas fa-university fa-lg"></i></a>
-                    </div> -->
-                    <div>
-                        <a href="mailto:ayushtiwari@icloud.com" class=""><i class="fa fa-envelope fa-lg"></i></a>
-                    </div>
-                    <div>
-                        <a href="tel:+918116374271" class=""><i class="fa fa-phone-square fa-lg"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="row intro">
-            <div class="col-md-6 offset-md-3">
-               
-                <div class="resume text-center">
-                    <a type="" href="files/resume-ayush-tiwari.pdf" class="py-0 px-3 ResumeBtn">Resume</a>
-                    <a type="" href="files/transcript.pdf" class="py-0 px-3 ResumeBtn">Transcript</a>
-                </div>
-                <div class="text-center mt-2">
-                    <p id="clock" class="small"></p>
-                </div>
-
-                <div class="text-center mt-2">
-                    <p id="clock" class="small"></p>
-                </div>
-                <div class="text-center mt-2">
-                    
-                    <button id="age" class="small"></button>
-                </div>
-            </div>
-        </div> -->
+       
     </div>
 </section>
 
@@ -100,63 +46,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="script/navbar.js"></script>
-
-<script>
-
-    $(function() {
-        var clockElement = document.getElementById('clock');
-        var ageElement = document.getElementById('age');
-        function clock() {
-            let date = new Date();
-            var hours = date.getHours();
-            var minutes = date.getMinutes();
-            var seconds = date.getSeconds();
-            var ampm = hours >= 12 ? 'pm' : 'am';
-            hours = hours % 12;
-            hours = hours ? hours : 12; // the hour '0' should be '12'
-            minutes = minutes < 10 ? '0'+minutes : minutes;
-            seconds = seconds < 10 ? '0'+seconds : seconds;
-
-            let days = ["Monday", "Tuesday", "Wednesday", "Thursday", ""]
-
-            var strTime = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
-            clockElement.textContent = strTime;
-            
-        }
-
-        // setInterval(clock, 1000);
-
-        function dhm(t){
-            var seconds = Math.floor(t / 1000),
-            minutes = Math.floor(seconds / 60),
-            hours   = Math.floor(minutes / 60),
-            days    = Math.floor(hours / 24),
-            months  = Math.floor(days / 30),
-            years   = Math.floor(days / 365);
-
-            seconds %= 60;
-            minutes %= 60;
-            hours %= 24;
-            days %= 30;
-            months %= 12;
-
-            let res = '';
-
-            return years + ' years ' + months + ' months ' + days + ' days ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds';
-        }
-
-        function age() {
-            ageElement.textContent =  dhm(new Date() - new Date('1998-12-23T02:00:00+05:30'));
-
-            
-        }
-
-        age();
-        setInterval(age, 1000);
-
-        $('[data-toggle="tooltip"]').tooltip();
-
-    });
-</script>
 
 </html>
